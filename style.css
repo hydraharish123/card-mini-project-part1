@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Cabin", sans-serif;
+}
+
+.container{
+    
+    text-align: center;
+    margin:0 auto; /*0 margin from top and bottom and center the div using auto*/
+}
+
+h1{
+    text-transform: uppercase;
+    padding:30px 0px;
+    font-size: 40px;
+}
+
+.main-content{
+    display:flex;
+    align-items: center;
+
+    
+}
+
+.cards{
+    padding:10px;
+    border:2px solid black;
+    border-radius: 4px;
+    margin:0px 5px;
+    display:flex;
+    flex:1;
+    flex-wrap: wrap;
+    transition: 0.2s ease;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.189);
+}
+
+.logo{
+    font-size: 70px;
+}
+
+.cards > *{
+    flex:1 1 100% /*flex-grow : 1 flex-shrink:1 flex-basis:100%*/
+}
+
+.cards h2{
+    font-size:30px;
+    text-transform: uppercase;
+    margin:0px 0px 10px 0px;
+}
+
+.cards p{
+    font-size: 20px;
+    margin:0px 0px 10px 0px;
+    font-weight: lighter;
+}
+
+.cards a{
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    padding:10px 0px;
+    border-radius: 25px;
+    
+    margin: 10px 0px;
+}
+
+.cards:hover{
+    color:white;
+}
+
+.cards:hover a{
+    color:white;
+    background-color: white;
+} 
+
+.card1:hover{
+    background-color: #1DA1F2;
+    border-color: #1DA1F2;
+}
+
+.card1:hover a{
+    color:#1DA1F2;
+}
+
+.card2:hover{
+    background-color: #E1306C;
+    border-color: #E1306C;
+}
+
+.card2:hover a{
+    color:#E1306C;
+}
+
+.card3:hover{
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.card3:hover a{
+    color:#FF0000;
+}
+
+@media (max-width:780px){
+    .main-content{
+        display:inline-block;
+       
+        
+    }
+
+    .cards{
+        margin:10px 20px;
+    }
+
+    h1{
+        text-align: center;
+    }
+}
